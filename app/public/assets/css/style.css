@@ -1,10 +1,15 @@
 
 body {
 	background-image: url(../images/background.jpg);
+	background-size: 100% 100%;
 }
 
 #titleRow {
 	margin-top: 30px;
+}
+
+#mainContainer {
+	margin-bottom: 40px;
 }
 
 #surveyRow {
@@ -61,7 +66,7 @@ body {
 }
 
 .footer-copyright {
-	position: fixed;
+	position: relative;
 	bottom: 10px;
 	width: 100%;
 }
