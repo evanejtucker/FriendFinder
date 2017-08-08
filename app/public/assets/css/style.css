@@ -1,4 +1,36 @@
 
 body {
-	background: blue;
+	background-image: url(../images/background.jpg);
+}
+
+#titleRow {
+	margin-top: 30px;
+}
+
+#logo {
+	/*dimensions: 2.58 x 1*/
+	height: 170px;
+	width: 438.7096px;
+}
+
+#titleText {
+	font-family: 'MedievalSharp', cursive;
+	margin-top: -10px;
+	padding-left: 160px;
+	font-style: italic;
+}
+
+#throne {
+	margin-top: -150px;
+	z-index: 1000;
+}
+
+#surveyLinkBox {
+	
+}
+
+.footer-copyright {
+	position: fixed;
+	bottom: 10px;
+	width: 100%;
 }
