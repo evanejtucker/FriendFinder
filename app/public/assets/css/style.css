@@ -56,8 +56,8 @@ body {
 	font-family: 'MedievalSharp';
 }
 
-.question {
-	font-size: 1.4em;
+#submit {
+	width: 100%;
 }
 
 .footer-copyright {
