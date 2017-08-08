@@ -26,7 +26,21 @@ body {
 }
 
 #surveyLinkBox {
-	
+	margin-top: 50px;
+	margin-left: 50px;
+	height: 150px;
+	width: 400px;
+	border-radius: 25px;
+	z-index: 2000;
+}
+
+#thronesLogo {
+	height: 100px;
+	width: 100px;
+}
+
+#linkText {
+	margin-left: 120px;
 }
 
 .footer-copyright {
