@@ -65,8 +65,12 @@ body {
 	width: 100%;
 }
 
-.footer-copyright {
+.footer {
 	position: relative;
 	bottom: 10px;
 	width: 100%;
+}
+
+.footer-link {
+	padding-left: 10px;
 }
