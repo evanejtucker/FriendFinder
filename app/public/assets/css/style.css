@@ -7,6 +7,11 @@ body {
 	margin-top: 30px;
 }
 
+#surveyRow {
+	margin-top: 30px;
+	margin-bottom: 40px;
+}
+
 #logo {
 	/*dimensions: 2.58 x 1*/
 	height: 170px;
@@ -41,6 +46,18 @@ body {
 
 #linkText {
 	margin-left: 120px;
+}
+
+.parallax-container {
+    height: 320px;
+}
+
+#surveyTitle {
+	font-family: 'MedievalSharp';
+}
+
+.question {
+	font-size: 1.4em;
 }
 
 .footer-copyright {
