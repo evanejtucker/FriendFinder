@@ -25,7 +25,7 @@
   </div>
   <hr>
   <div class="parallax-container">
-      <div class="parallax"><img src="assets/images/logo-background.jpg"></div>
+      <div class="parallax"><img id="parallaxImage" src="assets/images/logo-background.jpg"></div>
   </div>
   <hr>
 
@@ -50,9 +50,9 @@
         <hr>
         <!-- question 1 -->
         <div class="input-field col s12">
-          <h5>You're a lover, not a fighter</h5>
+          <h5>I'm a lover, not a fighter</h5>
           <i class="material-icons prefix">favorite</i>
-          <select>
+          <select id="Q1">
             <option value="" disabled selected>Choose your option</option>
             <option value="1">1 (Strongly Disagree)</option>
             <option value="2">2</option>
@@ -63,9 +63,9 @@
         </div>
         <!-- question 2 -->
         <div class="input-field col s12">
-          <h5>You prefer the Sea to the Mainland</h5>
+          <h5>My wealth defines me</h5>
           <i class="material-icons prefix">rowing</i>
-          <select>
+          <select id="Q2">
             <option value="" disabled selected>Choose your option</option>
             <option value="1">1 (Strongly Disagree)</option>
             <option value="2">2</option>
@@ -78,7 +78,7 @@
         <div class="input-field col s12">
           <h5>The person that passes the sentence should swing the sword.</h5>
           <i class="material-icons prefix">colorize</i>
-          <select>
+          <select id="Q3">
             <option value="" disabled selected>Choose your option</option>
             <option value="1">1 (Strongly Disagree)</option>
             <option value="2">2</option>
@@ -89,9 +89,9 @@
         </div>
         <!-- question 4 -->
         <div class="input-field col s12">
-          <h5>question 4</h5>
+          <h5>The course of life has taught the importance of family above all else</h5>
           <i class="material-icons prefix">add</i>
-          <select>
+          <select id="Q4">
             <option value="" disabled selected>Choose your option</option>
             <option value="1">1 (Strongly Disagree)</option>
             <option value="2">2</option>
@@ -102,9 +102,9 @@
         </div>
         <!-- question 5 -->
         <div class="input-field col s12">
-          <h5>question 5</h5>
+          <h5>I am as ambitious as I am cunning</h5>
           <i class="material-icons prefix">add</i>
-          <select>
+          <select id="Q5">
             <option value="" disabled selected>Choose your option</option>
             <option value="1">1 (Strongly Disagree)</option>
             <option value="2">2</option>
@@ -115,9 +115,9 @@
         </div>
         <!-- question 6 -->
         <div class="input-field col s12">
-          <h5>question 6</h5>
+          <h5>Everything is the will of the god(s), and I am their servent</h5>
           <i class="material-icons prefix">add</i>
-          <select>
+          <select id="Q6">
             <option value="" disabled selected>Choose your option</option>
             <option value="1">1 (Strongly Disagree)</option>
             <option value="2">2</option>
@@ -128,9 +128,9 @@
         </div>
         <!-- question 7 -->
         <div class="input-field col s12">
-          <h5>question 7</h5>
+          <h5>I enjoy the comforts of home over life on the road</h5>
           <i class="material-icons prefix">add</i>
-          <select>
+          <select id="Q7">
             <option value="" disabled selected>Choose your option</option>
             <option value="1">1 (Strongly Disagree)</option>
             <option value="2">2</option>
@@ -141,9 +141,9 @@
         </div>
         <!-- question 8 -->
         <div class="input-field col s12">
-          <h5>question 8</h5>
+          <h5>Knowledge is power</h5>
           <i class="material-icons prefix">add</i>
-          <select>
+          <select id="Q8">
             <option value="" disabled selected>Choose your option</option>
             <option value="1">1 (Strongly Disagree)</option>
             <option value="2">2</option>
@@ -154,9 +154,9 @@
         </div>
         <!-- question 9 -->
         <div class="input-field col s12">
-          <h5>question 9</h5>
+          <h5>My enemies will know swift and terrible justice</h5>
           <i class="material-icons prefix">add</i>
-          <select>
+          <select id="Q9">
             <option value="" disabled selected>Choose your option</option>
             <option value="1">1 (Strongly Disagree)</option>
             <option value="2">2</option>
@@ -167,9 +167,22 @@
         </div>
         <!-- question 10 -->
         <div class="input-field col s12">
-          <h5>question 10</h5>
+          <h5>nobody does my fighting for me</h5>
           <i class="material-icons prefix">add</i>
-          <select>
+          <select id="Q10">
+            <option value="" disabled selected>Choose your option</option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+          </select>
+        </div>
+        <!-- question 11 -->
+        <div class="input-field col s12">
+          <h5>The world will be mine</h5>
+          <i class="material-icons prefix">add</i>
+          <select id="Q11">
             <option value="" disabled selected>Choose your option</option>
             <option value="1">1 (Strongly Disagree)</option>
             <option value="2">2</option>
@@ -199,6 +212,7 @@
       <a class="grey-text text-lighten-4 right footer-link" href="/api/friends"> API Friends</a>
       <a class="grey-text text-lighten-4 right footer-link" href="/api/characters"> API Characters</a>
       <a class="grey-text text-lighten-4 right footer-link" href="https://github.com/evanejtucker/FriendFinder"> Github Repo</a>
+      <a class="grey-text text-lighten-4 right footer-link" id="clear" href="/api/friends"> clear</a>
     </span>
     </div>
   </div>

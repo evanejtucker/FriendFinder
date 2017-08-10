@@ -57,6 +57,10 @@ body {
     height: 320px;
 }
 
+#parallaxImage {
+	width: cover;
+}
+
 #surveyTitle {
 	font-family: 'MedievalSharp';
 }
@@ -69,6 +73,10 @@ body {
 	position: relative;
 	bottom: 10px;
 	width: 100%;
+}
+
+#homeFooter {
+	margin-bottom: 200px;
 }
 
 .footer-link {
