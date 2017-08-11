@@ -9,6 +9,21 @@ var characters = [
     name: "Tyrion Lannister",
     photo: "https://upload.wikimedia.org/wikipedia/en/5/50/Tyrion_Lannister-Peter_Dinklage.jpg",
     scores: ["5", "5", "5", "5", "5", "5", "5", "5", "5", "5", "5"]
+  },
+  {
+    name: "HODOR",
+    photo: "https://upload.wikimedia.org/wikipedia/en/5/50/Tyrion_Lannister-Peter_Dinklage.jpg",
+    scores: ["3", "3", "3", "3", "3", "3", "3", "3", "3", "3", "3"]
+  },
+  {
+    name: "Samwell Tarly",
+    photo: "https://upload.wikimedia.org/wikipedia/en/5/50/Tyrion_Lannister-Peter_Dinklage.jpg",
+    scores: ["2", "2", "2", "2", "2", "2", "2", "2", "2", "2", "2"]
+  },
+  {
+    name: "Arya Stark",
+    photo: "https://upload.wikimedia.org/wikipedia/en/5/50/Tyrion_Lannister-Peter_Dinklage.jpg",
+    scores: ["4", "4", "4", "4", "4", "4", "4", "4", "4", "4", "4"]
   }
 ];
 

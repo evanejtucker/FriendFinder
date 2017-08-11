@@ -30,21 +30,21 @@ module.exports = function(app) {
       var totalDifference = 0;
 
       // will loop through each friend in the array
-      for (i=0; i<friends.length; i++) {
+      for (i=0; i<characters.length; i++) {
         // console.log(friends[i].name);
         totalDifference = 0;
 
         // next loop through each score in friends[i], and com pare them...
         // to userData scores and calc the absolute difference.
-        for (x=0; i<friends[i].scores[x]; x++) {
-          totalDifference += Math.abs(parseInt(userScores[x]) - parseInt(friends[i].scores[x]));
+        for (x=0; i<characters[i].scores[x]; x++) {
+          totalDifference += Math.abs(parseInt(userScores[x]) - parseInt(characters[i].scores[x]));
           
           // checks if friend[i]'s totalDifference is less than the bestFriend,... 
           // ...friend difference, if so, it becomes the new best match
           if (totalDifference <= bestFriend.friendDifference) {
             // sets bestFriend variables to best match
-            bestFriend.name = friends[i].name;
-            bestFriend.photo = friends[i].photo;
+            bestFriend.name = characters[i].name;
+            bestFriend.photo = characters[i].photo;
             bestFriend.friendDifference = totalDifference;
           }
         }
