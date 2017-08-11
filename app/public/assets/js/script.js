@@ -7,6 +7,8 @@ $(document).ready(function(){
 	$('.parallax').parallax();
 	$('select').material_select();
 
+
+
 // functions
 // --------------------------------------------------------------------------
 	// captures data from form
@@ -15,9 +17,9 @@ $(document).ready(function(){
 
 		// captures user data from survey in abject
 		var userData = {
-			userName: $("#name").val(),
-			userPhoto: $("#photo").val(),
-			userAnswers: [
+			name: $("#name").val(),
+			photo: $("#photo").val(),
+			scores: [
 				q1 = $("#Q1").val(),
 				q2 = $("#Q2").val(),
 				q3 = $("#Q3").val(),
@@ -32,54 +34,26 @@ $(document).ready(function(){
 			]
 		}
 		
-
 		//testing
 		console.log(userData);
 
-		// post to api characters
+		var currentURL = window.location.origin;
+
 		$.post("/api/friends", userData, function(data) {
-			if(data) {
-				console.log("your information has been added");
-			}
-			// clears survey answers
-			$("#name").val("");
-			$("#photo").val("");
+
+				console.log("userData added successfuly");
+				console.log(data);
+			
 		});
 
-		getUserScore();
 	}
 
-	// will calculate the user score from api/friends 
-	function getUserScore() {
-
-		var currentURL = window.location.origin;
-
-		$.ajax({ url: currentURL + "/api/friends", method: "GET" }).done(function(friends) {
-
-			console.log(friends);
-
-		});
-	}
-
-	// fucntion to clear friends list array
-	function clearFriendsList() {
-		var currentURL = window.location.origin;
-        $.ajax({ url: currentURL + "/api/clear", method: "POST" });
-        console.log("friends list cleared");
-
-      // Refresh the page after data is cleared
-      location.reload();
-
-    }
 
 
 // mainProcess
 // --------------------------------------------------------------------------
 
 $("#submit").on("click", submitForm);
-
-$("clear").on("click", clearFriendsList);
-
 
 
 });
