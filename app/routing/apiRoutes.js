@@ -37,31 +37,35 @@ module.exports = function(app) {
 
         // next loop through each score in friends[i], and com pare them...
         // to userData scores and calc the absolute difference.
-        for (x=0; i<characters[i].scores[x]; x++) {
+        for (x=0; x<characters[i].scores.length; x++) {
 
+          // calculate total score
           totalDifference += Math.abs(parseInt(userScores[x]) - parseInt(characters[i].scores[x]));
-
-          console.log("userScore[x] =  " + userScores[x] + " characterScore[x] = " + characters[i].scores[x] + " total differnece: " + totalDifference);
-          // calculate total score, then do if statement
+          
         }
 
         // checks if friend[i]'s totalDifference is less than the bestFriend,... 
         // ...friend difference, if so, it becomes the new best match
+        console.log("Character Name: ", characters[i].name, "Total Score: ", totalDifference);
 
         if (totalDifference <= bestFriend.friendDifference) {
           // sets bestFriend variables to best match
           bestFriend.name = characters[i].name;
           bestFriend.photo = characters[i].photo;
-          bestFriend.friendDifference = characterDifference;
+          bestFriend.friendDifference = totalDifference;
 
-          console.log("The new best match is " + bestFriend.name);
-        } 
+          console.log("The new best match is " + bestFriend.name + " with a friend score of: " + totalDifference + "\n");
+
+        } else {
+          // character is not the best match.
+          console.log(characters[i].name + " is not your best friend\n")
+        }
       }
 
       friends.push(userData);
       res.json(bestFriend);
-      // res.json(true);
       console.log(bestFriend);
+      console.log("-----------------------------------------------");
   });
 
 

@@ -42,7 +42,8 @@ $(document).ready(function(){
 		$.post("/api/friends", userData, function(data) {
 
 				console.log("userData added successfuly");
-				console.log(data);
+				console.log("Best Friend: " + data.name);
+				console.log("User Name: " + userData.name);
 			
 		});
 
