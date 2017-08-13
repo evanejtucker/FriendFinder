@@ -18,7 +18,7 @@ body {
 }
 
 #logo {
-	/*dimensions: 2.58 x 1*/
+	/*dimensions = 2.58 x 1*/
 	height: 170px;
 	width: 438.7096px;
 }
@@ -81,4 +81,19 @@ body {
 
 .footer-link {
 	padding-left: 10px;
+}
+
+#modal1 {
+	height: 80%;
+	width: 60%;
+}
+
+#matchPhoto {
+	height: 60%;
+	width: 40%;
+}
+
+.modal-footer {
+	position: relative;
+	bottom: 0;
 }

@@ -33,7 +33,8 @@ var userInfo = [];
 				q8 = $("#Q8").val(),
 				q9 = $("#Q9").val(),
 				q10 = $("#Q10").val(),
-				q11 = $("#Q11").val()
+				q11 = $("#Q11").val(),
+				q12 = $("#Q12").val()
 			]
 		}
 		
@@ -64,7 +65,7 @@ var userInfo = [];
 // function to set modal to diplay best friend info
 function addInfo() {
 	$("#matchPhoto").attr("src", bestMatch[0].photo);
-	$("#matchName").html(bestMatch[0].name);
+	$("#friendName").html(bestMatch[0].name);
 
 
 }
@@ -75,6 +76,5 @@ function addInfo() {
 // --------------------------------------------------------------------------
 
 $("#submit").on("click", submitForm);
-
 
 });

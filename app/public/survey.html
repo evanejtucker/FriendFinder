@@ -76,7 +76,7 @@
         </div>
         <!-- question 3 -->
         <div class="input-field col s12">
-          <h5>The person that passes the sentence should swing the sword.</h5>
+          <h5>Nothing is worth sacrificing your honor</h5>
           <i class="material-icons prefix">colorize</i>
           <select id="Q3">
             <option value="" disabled selected>Choose your option</option>
@@ -180,9 +180,22 @@
         </div>
         <!-- question 11 -->
         <div class="input-field col s12">
-          <h5>The world will be mine</h5>
+          <h5>The end is justified by the means</h5>
           <i class="material-icons prefix">add</i>
           <select id="Q11">
+            <option value="" disabled selected>Choose your option</option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+          </select>
+        </div>
+        <!-- question 12 -->
+        <div class="input-field col s12">
+          <h5>Fear is the keey to respect</h5>
+          <i class="material-icons prefix">add</i>
+          <select id="Q12">
             <option value="" disabled selected>Choose your option</option>
             <option value="1">1 (Strongly Disagree)</option>
             <option value="2">2</option>
@@ -220,7 +233,8 @@
   <!-- Modal to display best match -->
   <div id="modal1" class="modal">
     <div class="modal-content">
-      <h4 class="center">Your ally would be...</h4>
+      <h5 class="center">Your ally would be...</h4>
+      <h3 class="center" id="friendName"></h5>
       <div class="row">
         <div class="col s6" id="infoSide"> <h3 class="center" id="matchName"></h3></div>
         <div class="col s6" id="photoSide"><img id="matchPhoto" scr="#"></div>
