@@ -1,7 +1,7 @@
 
 var characters = [
   {
-    name: "John Snow",
+    name: "Jon Snow",
     photo: "assets/images/jonSnow.jpg",
     scores: [
     /* question 1: */  "1",

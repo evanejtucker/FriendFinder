@@ -193,7 +193,7 @@
         </div>
         <!-- question 12 -->
         <div class="input-field col s12">
-          <h5>Fear is the keey to respect</h5>
+          <h5>Fear is the key to respect</h5>
           <i class="material-icons prefix">add</i>
           <select id="Q12">
             <option value="" disabled selected>Choose your option</option>
@@ -214,34 +214,45 @@
     </div>
     </div>  
   </div>
-
-
+  
+  <!-- play sudio element button -->
+  <div class="themeSong">
+     <a class="btn-floating btn-large waves-effect waves-light right red"><i class="material-icons">music_note</i></a>
+  </div>
+  
   <!-- footer -->
   <div class="footer white-text">
     <div class="container">
-    <span>
-      © 2017 Evan Tucker
-      <a class="grey-text text-lighten-4 right footer-link" href="/home"> Home</a>
-      <a class="grey-text text-lighten-4 right footer-link" href="/api/friends"> API Friends</a>
-      <a class="grey-text text-lighten-4 right footer-link" href="/api/characters"> API Characters</a>
-      <a class="grey-text text-lighten-4 right footer-link" href="https://github.com/evanejtucker/FriendFinder"> Github Repo</a>
-    </span>
+      <span>
+        © 2017 Evan Tucker
+        <a class="grey-text text-lighten-4 right footer-link" href="/home"> Home</a>
+        <a class="grey-text text-lighten-4 right footer-link" href="/api/friends"> API Friends</a>
+        <a class="grey-text text-lighten-4 right footer-link" href="/api/characters"> API Characters</a>
+        <a class="grey-text text-lighten-4 right footer-link" href="https://github.com/evanejtucker/FriendFinder"> Github Repo</a>
+      </span>
     </div>
   </div>
 
 
   <!-- Modal to display best match -->
   <div id="modal1" class="modal">
-    <div class="modal-content">
-      <h5 class="center">Your ally would be...</h4>
-      <h3 class="center" id="friendName"></h5>
+    <div class="modal-content white-text">
       <div class="row">
-        <div class="col s12 md6" id="infoSide"> <h3 class="center" id="matchName"></h3></div>
-        <div class="col s12 md6" id="photoSide"><img id="matchPhoto" scr="#"></div>
+        <div class="col s12 m12 l6">
+          <span class="center">
+            <h5 id="userName"></h5>
+            <h5> your ally would be...</h5>
+          </span>
+          <h2 class="center" id="friendName">Test Name</h2>
+          <hr>
+          <p class="center">this will be about 20 words about whoever is the matched character, a little bit about them, where they are from, lineage, and distinguishing characteristics.</p>
+          <a class="waves-effect waves-light btn center-align" id="playSound"><i class="material-icons left">music_note</i>Play Sound</a>
+        </div>
+        <div class="col s6 m12 l6 offset-s3">
+          <div  id="photoSide"><img class="center-align" id="matchPhoto" scr="/assets/images/jonSnow.jpg"></div>
+        </div>
+        <a href="/survey" class="modal-action waves-effect waves-green btn-flat pulse white-text right" id="tryAgain">Try Again?</a>
       </div>
-    </div>
-    <div class="modal-footer">
-      <a href="/survey" class="modal-action waves-effect waves-green btn-flat">close</a>
     </div>
   </div>
 

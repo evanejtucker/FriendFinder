@@ -12,6 +12,11 @@ $(document).ready(function(){
 var bestMatch = [];
 var userInfo = [];
 
+// audio elements
+var audioElement = document.createElement("audio");
+var themeSong = "assets/sounds/mainTheme.mp3"
+var isPlaying = false;
+
 // functions
 // --------------------------------------------------------------------------
 	// captures data from form
@@ -66,8 +71,21 @@ var userInfo = [];
 function addInfo() {
 	$("#matchPhoto").attr("src", bestMatch[0].photo);
 	$("#friendName").html(bestMatch[0].name);
+	$("#userName").html(userInfo[0].name);
 
+}
 
+function playThemeSong() {
+	audioElement.setAttribute("src", themeSong);
+	if(!isPlaying) {
+		audioElement.play();
+		isPlaying = true;
+	}
+	else if (isPlaying) {
+		audioElement.pause();
+		isPlaying = false;
+	}
+	$(".themeSong").prop("volume", .5);
 }
 
 
@@ -76,5 +94,7 @@ function addInfo() {
 // --------------------------------------------------------------------------
 
 $("#submit").on("click", submitForm);
+
+$(".themeSong").on("click", playThemeSong);
 
 });

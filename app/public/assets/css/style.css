@@ -83,17 +83,33 @@ body {
 	padding-left: 10px;
 }
 
+.themeSong {
+	position: fixed;
+	bottom: 30px;
+	right: 30px;
+}
+
 #modal1 {
-	height: 80%;
-	width: 60%;
+	background-image: url(../images/smoke.jpg);
+	background-size: 100% 100%;
+	border-radius: 25px;
+	border: 3px solid white;
 }
 
 #matchPhoto {
 	height: 400px;
-	width: 310px;
+	width: 286px;
+	border: solid 2px white;
 }
 
-.modal-footer {
-	position: relative;
-	bottom: 0;
+#playSound {
+	margin-left: 25%;
+	margin-bottom: 20px;
+	margin-top: 30px;
 }
+
+#tryAgain {
+	margin-top: 40px;
+	margin-right: 70px;
+}
+
