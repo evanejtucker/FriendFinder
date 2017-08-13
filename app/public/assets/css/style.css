@@ -24,7 +24,7 @@ body {
 }
 
 #titleText {
-	font-family: 'MedievalSharp', cursive;
+	font-family: 'Berkshire Swash', cursive;
 	margin-top: -10px;
 	padding-left: 160px;
 	font-style: italic;
@@ -62,7 +62,6 @@ body {
 }
 
 #surveyTitle {
-	/*font-family: 'Courgette', cursive;*/
 	font-family: 'Berkshire Swash', cursive;
 }
 

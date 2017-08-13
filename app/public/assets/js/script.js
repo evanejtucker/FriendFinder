@@ -14,7 +14,7 @@ var userInfo = [];
 
 // audio for theme
 var audioElement = document.createElement("audio");
-var themeSong = "assets/sounds/mainTheme.mp3"
+var themeSong = "assets/sounds/thronesTheme.mp3"
 var isPlaying = false;
 
 // audio for characters
