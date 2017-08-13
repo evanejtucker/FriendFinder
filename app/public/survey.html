@@ -18,6 +18,9 @@
   <!-- google fonts -->
   <link href="https://fonts.googleapis.com/css?family=Courgette|Ubuntu|Quattrocento|Berkshire+Swash" rel="stylesheet">
   
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+  
   <title> Survey </title>
 
 </head>
@@ -28,7 +31,8 @@
   </div>
   <hr>
   <div class="parallax-container">
-      <div class="parallax"><img id="parallaxImage" src="assets/images/logo-background.jpg"></div>
+      <div class="parallax hide-on-small-only"><img id="parallaxImage" src="assets/images/logo-background.jpg"></div>
+      <div class="parallax hide-on-med-and-up"><img id="parallaxImage2" src="assets/images/mobile-background.jpg"></div>
   </div>
   <hr>
 
@@ -48,7 +52,7 @@
         <div class="input-field col s12">
           <h5>I'm a lover, not a fighter</h5>
           <i class="material-icons prefix">favorite</i>
-          <select id="Q1">
+          <select id="Q1" required>
             <option value="" disabled selected>Choose your option</option>
             <option value="1">1 (Strongly Disagree)</option>
             <option value="2">2</option>
@@ -176,7 +180,7 @@
         </div>
         <!-- question 11 -->
         <div class="input-field col s12">
-          <h5>The end is justified by the means</h5>
+          <h5 id="q11">The end is justified by the means</h5>
           <i class="material-icons prefix">add</i>
           <select id="Q11">
             <option value="" disabled selected>Choose your option</option>
@@ -242,9 +246,11 @@
           <h2 class="center" id="friendName">Test Name</h2>
           <hr>
           <p class="center" id="friendDescription">this will be about 20 words about whoever is the matched character, a little bit about them, where they are from, lineage, and distinguishing characteristics.</p>
-          <a class="waves-effect waves-light btn center-align" id="playSound"><i class="material-icons left">play_arrow</i>Play Sound</a>
+          <div class="col s12 center">
+            <a class="waves-effect waves-light btn center" id="playSound"><i class="material-icons left">play_arrow</i>Play Sound</a>
+          </div>
         </div>
-        <div class="col s6 m12 l6 offset-s3">
+        <div class="col s12 m12 l6 center">
           <div  id="photoSide"><img class="center-align" id="matchPhoto" scr="/assets/images/jonSnow.jpg"></div>
         </div>
         <a href="/survey" class="modal-action waves-effect waves-green btn-flat pulse white-text right" id="tryAgain"><i class="material-icons left">replay</i>Try Again?</a>

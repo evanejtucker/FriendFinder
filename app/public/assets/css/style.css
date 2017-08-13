@@ -61,6 +61,11 @@ body {
 	width: cover;
 }
 
+#parallaxImage2 {
+	width: 1200px;
+	padding-bottom: 70px;
+}
+
 #surveyTitle {
 	font-family: 'Berkshire Swash', cursive;
 }
@@ -116,7 +121,7 @@ body {
 }
 
 #playSound {
-	margin-left: 25%;
+	/*margin-left: 25%;*/
 	margin-bottom: 20px;
 	margin-top: 30px;
 }
@@ -128,5 +133,15 @@ body {
 
 form {
 	font-family: 'Quattrocento', serif;
+}
+
+.isvalid {
+	color: red;
+}
+
+@media (max-width: 600px) {
+	/*#parallaxImage {
+		width: 100%;
+	}*/
 }
 

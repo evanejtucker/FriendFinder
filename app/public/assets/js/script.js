@@ -27,51 +27,67 @@ var isPlaying_character = false;
 	function submitForm() {
 		event.preventDefault();
 
+		var isValid = true;
+
 		// captures user data from survey in abject
 		var userData = {
 			name: $("#name").val(),
 			photo: $("#photo").val(),
 			scores: [
-				q1 = $("#Q1").val(),
-				q2 = $("#Q2").val(),
-				q3 = $("#Q3").val(),
-				q4 = $("#Q4").val(),
-				q5 = $("#Q5").val(),
-				q6 = $("#Q6").val(),
-				q7 = $("#Q7").val(),
-				q8 = $("#Q8").val(),
-				q9 = $("#Q9").val(),
-				q10 = $("#Q10").val(),
-				q11 = $("#Q11").val(),
-				q12 = $("#Q12").val()
+				$("#Q1").val(),
+				$("#Q2").val(),
+				$("#Q3").val(),
+				$("#Q4").val(),
+				$("#Q5").val(),
+				$("#Q6").val(),
+				$("#Q7").val(),
+				$("#Q8").val(),
+				$("#Q9").val(),
+				$("#Q10").val(),
+				$("#Q11").val(),
+				$("#Q12").val()
 			]
+		}
+
+		for (var i=0; i<userData.scores.length; i++) {
+			if (!userData.scores[i]) {
+				isValid = false;
+				// $("#Q"+(i+1)).material_select();
+				// $("#Q"+(i+1)).addClass("isvalid");
+				$("#q"+(i+1)).addClass("isvalid");
+				console.log($("#Q"+(i+1)));
+			}
 		}
 		
 		//testing
 		console.log(userData);
 
 		var currentURL = window.location.origin;
+		// validate form
+		if (isValid) {
+			$.post("/api/friends", userData, function(data) {
 
-		$.post("/api/friends", userData, function(data) {
-
-				console.log("userData added successfuly");
-				console.log("Best Friend: " + data.name);
-				console.log("User Name: " + userData.name);
-				console.log("---------------------------------");
-				console.log(data.description);
-				console.log(data.sound);
+					console.log("userData added successfuly");
+					console.log("Best Friend: " + data.name);
+					console.log("User Name: " + userData.name);
+					console.log("---------------------------------");
+					console.log(data.description);
+					console.log(data.sound);
 
 
-				// push data and user data into global variables
-				bestMatch.push(data);
-				userInfo.push(userData);
-				// adds best friend info to modal
-				addInfo();
-		});
+					// push data and user data into global variables
+					bestMatch.push(data);
+					userInfo.push(userData);
+					// adds best friend info to modal
+					addInfo();
+			});
 
-		//display modal
-		$('#modal1').modal('open');
-		clearArrays();
+			//display modal
+			$('#modal1').modal('open');
+			clearArrays();
+		} else {
+
+		}
 
 	}
 
