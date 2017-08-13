@@ -18,6 +18,8 @@ module.exports = function(app) {
       var bestFriend = {
         name: "",
         photo: "",
+        description: "",
+        sound: "",
         friendDifference: 1000
       }
 
@@ -52,6 +54,8 @@ module.exports = function(app) {
           // sets bestFriend variables to best match
           bestFriend.name = characters[i].name;
           bestFriend.photo = characters[i].photo;
+          bestFriend.description = characters[i].description;
+          bestFriend.sound = characters[i].sound;
           bestFriend.friendDifference = totalDifference;
 
           console.log("The new best match is " + bestFriend.name + " with a friend score of: " + totalDifference + "\n");

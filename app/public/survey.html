@@ -15,6 +15,9 @@
   <!-- materialize icons -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   
+  <!-- google fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Courgette|Ubuntu|Quattrocento|Berkshire+Swash" rel="stylesheet">
+  
   <title> Survey </title>
 
 </head>
@@ -41,12 +44,12 @@
           <!-- <label for="name">Name</label> -->
         </div>
         <!-- picute input field -->
-        <div class="input-field col s12">
+        <!-- <div class="input-field col s12">
           <h5>Add a Photo (url)</h5>
           <i class="material-icons prefix">add_a_photo</i>
-          <input placeholder="Photo URL" id="photo" type="text" class="validate">
+          <input placeholder="Photo URL" id="photo" type="text" class="validate"> -->
           <!-- <label for="photo">Photo URL</label> -->
-        </div>
+        <!-- </div> -->
         <hr>
         <!-- question 1 -->
         <div class="input-field col s12">
@@ -239,13 +242,13 @@
     <div class="modal-content white-text">
       <div class="row">
         <div class="col s12 m12 l6">
-          <span class="center">
+          <span class="center" id="modalHeader1">
             <h5 id="userName"></h5>
             <h5> your ally would be...</h5>
           </span>
           <h2 class="center" id="friendName">Test Name</h2>
           <hr>
-          <p class="center">this will be about 20 words about whoever is the matched character, a little bit about them, where they are from, lineage, and distinguishing characteristics.</p>
+          <p class="center" id="friendDescription">this will be about 20 words about whoever is the matched character, a little bit about them, where they are from, lineage, and distinguishing characteristics.</p>
           <a class="waves-effect waves-light btn center-align" id="playSound"><i class="material-icons left">music_note</i>Play Sound</a>
         </div>
         <div class="col s6 m12 l6 offset-s3">

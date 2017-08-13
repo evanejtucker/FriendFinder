@@ -16,7 +16,9 @@ var characters = [
     /* question 10: */ "1",
     /* question 11: */ "1",
     /* question 12: */ "1"
-            ]
+            ],
+    description: "From Bastard of Winterfell, to King in the North, Jon Snow is a proven warrior and leader, He is loyal, fair, and honorable to a fault.  Jon Snow will make a valuable ally in the wars to come.",
+    sound: "assets/sounds/mainTheme.mp3"
   },
   {
     name: "Tyrion Lannister",
