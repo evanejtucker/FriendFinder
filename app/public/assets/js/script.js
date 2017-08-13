@@ -6,8 +6,11 @@ $(document).ready(function(){
 	// materialize elements
 	$('.parallax').parallax();
 	$('select').material_select();
+	$('.modal').modal();
 
-
+// stores data collected in api routes
+var bestMatch = [];
+var userInfo = [];
 
 // functions
 // --------------------------------------------------------------------------
@@ -44,10 +47,27 @@ $(document).ready(function(){
 				console.log("userData added successfuly");
 				console.log("Best Friend: " + data.name);
 				console.log("User Name: " + userData.name);
-			
+				console.log("---------------------------------")
+
+				// push data and user data into global variables
+				bestMatch.push(data);
+				userInfo.push(userData);
+				// adds best friend info to modal
+				addInfo();
 		});
 
+		//display modal
+		$('#modal1').modal('open');
+
 	}
+
+// function to set modal to diplay best friend info
+function addInfo() {
+	$("#matchPhoto").attr("src", bestMatch[0].photo);
+	$("#matchName").html(bestMatch[0].name);
+
+
+}
 
 
 
