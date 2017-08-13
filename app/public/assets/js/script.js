@@ -71,6 +71,7 @@ var isPlaying_character = false;
 
 		//display modal
 		$('#modal1').modal('open');
+		clearArrays();
 
 	}
 
@@ -110,6 +111,11 @@ function playThemeSong() {
 		audioElement.pause();
 		isPlaying = false;
 	}
+}
+
+function clearArrays() {
+	bestMatch = [];
+	userInfo = [];
 }
 
 
