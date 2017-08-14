@@ -52,8 +52,6 @@ var isPlaying_character = false;
 		for (var i=0; i<userData.scores.length; i++) {
 			if (!userData.scores[i]) {
 				isValid = false;
-				// $("#Q"+(i+1)).material_select();
-				// $("#Q"+(i+1)).addClass("isvalid");
 				$("#q"+(i+1)).addClass("isvalid");
 				console.log($("#Q"+(i+1)));
 			}
@@ -86,7 +84,7 @@ var isPlaying_character = false;
 			$('#modal1').modal('open');
 			clearArrays();
 		} else {
-
+			Materialize.toast('You Need to fill in all the questions', 4000);
 		}
 
 	}
@@ -101,12 +99,12 @@ function addInfo() {
 }
 
 function playCharacterSound() {
+
 	// pause audio if it is still playing
 	audioElement.pause();
 
 	if(!isPlaying_character) {
 		characterAudioElement.play();
-		characterAudioElement.volume = .01;
 		isPlaying_character = true;
 	}
 	else if (isPlaying_character) {
@@ -120,7 +118,7 @@ function playThemeSong() {
 	audioElement.setAttribute("src", themeSong);
 	if(!isPlaying) {
 		audioElement.play();
-		audioElement.volume = .01;
+		audioElement.volume = .04;
 		isPlaying = true;
 	}
 	else if (isPlaying) {

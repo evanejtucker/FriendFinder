@@ -2,7 +2,7 @@
 var characters = [
   {
     name: "Jon Snow",
-    photo: "assets/images/jonSnow.jpg",
+    photo: "assets/images/jonSnowGif.gif",
     scores: [
     /* question 1: */  "1",
     /* question 2: */  "1",
@@ -22,7 +22,7 @@ var characters = [
   },
   {
     name: "Brandon Stark",
-    photo: "assets/images/jonSnow.jpg",
+    photo: "assets/images/branStarkGif.gif",
     scores: [
     /* question 1: */  "2",
     /* question 2: */  "2",
@@ -37,12 +37,12 @@ var characters = [
     /* question 11: */ "2",
     /* question 12: */ "2"
             ],
-    description: "From Bastard of Winterfell, to King in the North, Jon Snow is a proven warrior and leader, He is loyal, fair, and honorable to a fault.  Jon Snow will make a valuable ally in the wars to come.",
+    description: "As the three eyed raven, Bran has grown past most of his worldly attachements and remains as a powerful mystical force.  While his all knowing will definetely come in handy, he is not the best traveling companion, and a rather poor conversationalist.",
     sound: "assets/sounds/branStark.mp3"
   },
   {
     name: "Rob Stark",
-    photo: "assets/images/jonSnow.jpg",
+    photo: "assets/images/robStarkGif.gif",
     scores: [
     /* question 1: */  "3",
     /* question 2: */  "3",
@@ -57,12 +57,12 @@ var characters = [
     /* question 11: */ "3",
     /* question 12: */ "3"
             ],
-    description: "From Bastard of Winterfell, to King in the North, Jon Snow is a proven warrior and leader, He is loyal, fair, and honorable to a fault.  Jon Snow will make a valuable ally in the wars to come.",
+    description: "Honorable, bold, brave.  Rob Stark was a true northerner, and had the respect of his people.  Unfortunatley he bit off a bit more than he could chew and ended disasterously... better luck next time. ",
     sound: "assets/sounds/robStark.mp3"
   },
   {
     name: "Arya Stark",
-    photo: "assets/images/jonSnow.jpg",
+    photo: "assets/images/aryaStarkGif.gif",
     scores: [
     /* question 1: */  "4",
     /* question 2: */  "4",
@@ -77,12 +77,12 @@ var characters = [
     /* question 11: */ "4",
     /* question 12: */ "4"
             ],
-    description: "From Bastard of Winterfell, to King in the North, Jon Snow is a proven warrior and leader, He is loyal, fair, and honorable to a fault.  Jon Snow will make a valuable ally in the wars to come.",
+    description: "Trained by faceless assassins from another continent, Arya Stark is as lethal as they come, coupled with her sharp intellect and strong sense of independence, you can feel safe with Arya around... just dont end up on her list. ",
     sound: "assets/sounds/aryaStark.mp3"
   },
   {
     name: "Sansa Stark",
-    photo: "assets/images/jonSnow.jpg",
+    photo: "assets/images/sansaStarkGif.gif",
     scores: [
     /* question 1: */  "5",
     /* question 2: */  "5",
@@ -97,12 +97,12 @@ var characters = [
     /* question 11: */ "5",
     /* question 12: */ "5"
             ],
-    description: "From Bastard of Winterfell, to King in the North, Jon Snow is a proven warrior and leader, He is loyal, fair, and honorable to a fault.  Jon Snow will make a valuable ally in the wars to come.",
+    description: "Tough and resilient, the New Lady of winterfell is ambitious and clever.  Sansa has the makings of a greater leader, as long as she keeps good council.",
     sound: "assets/sounds/sansaStark.mp3"
   },
   {
     name: "Cateyln Stark",
-    photo: "assets/images/jonSnow.jpg",
+    photo: "assets/images/catelynStarkGif.gif",
     scores: [
     /* question 1: */  "1",
     /* question 2: */  "2",
@@ -117,12 +117,12 @@ var characters = [
     /* question 11: */ "1",
     /* question 12: */ "2"
             ],
-    description: "From Bastard of Winterfell, to King in the North, Jon Snow is a proven warrior and leader, He is loyal, fair, and honorable to a fault.  Jon Snow will make a valuable ally in the wars to come.",
+    description: "A loving mother who was willing to do anyhting for her children, Catelyn stark was repected by notherners and southerners alike.  Just stay away from family functions.",
     sound: "assets/sounds/catelynStark.mp3"
   },
   {
     name: "Ned Stark",
-    photo: "assets/images/jonSnow.jpg",
+    photo: "assets/images/nedStarkGif.gif",
     scores: [
     /* question 1: */  "3",
     /* question 2: */  "3",
@@ -137,7 +137,7 @@ var characters = [
     /* question 11: */ "1",
     /* question 12: */ "1"
             ],
-    description: "From Bastard of Winterfell, to King in the North, Jon Snow is a proven warrior and leader, He is loyal, fair, and honorable to a fault.  Jon Snow will make a valuable ally in the wars to come.",
+    description: "As Honorable as they come, Ned Stark was a great war hero and repected leader,  just not great at politics.",
     sound: "assets/sounds/nedStark.mp3"
   },
   

@@ -100,6 +100,7 @@ body {
 	background-size: 100% 100%;
 	border-radius: 25px;
 	border: 3px solid white;
+	width: 80%;
 }
 
 #modalHeader1 {
@@ -115,13 +116,14 @@ body {
 }
 
 #matchPhoto {
+	/*height: 400px;
+	width: 286px;*/
 	height: 400px;
-	width: 286px;
+	width: 600px;
 	border: solid 2px white;
 }
 
 #playSound {
-	/*margin-left: 25%;*/
 	margin-bottom: 20px;
 	margin-top: 30px;
 }
@@ -131,17 +133,15 @@ body {
 	margin-right: 70px;
 }
 
-form {
-	font-family: 'Quattrocento', serif;
-}
-
 .isvalid {
-	color: red;
+	color: #F75D59;
+	font-style: italic;
 }
 
-@media (max-width: 600px) {
-	/*#parallaxImage {
-		width: 100%;
-	}*/
+@media (max-width: 400px) {
+	#matchPhoto {
+		height: 140px;
+		width: 220px;
+	}
 }
 
