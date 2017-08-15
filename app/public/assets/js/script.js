@@ -45,7 +45,10 @@ var isPlaying_character = false;
 				$("#Q9").val(),
 				$("#Q10").val(),
 				$("#Q11").val(),
-				$("#Q12").val()
+				$("#Q12").val(),
+				$("#Q13").val(),
+				$("#Q14").val(),
+				$("#Q15").val()
 			]
 		}
 
